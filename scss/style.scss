@@ -45,6 +45,10 @@ $text-color-grey:#B4B7B9;
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .container-header{
     @include container-header-style;
     padding-bottom: 2.5rem;
@@ -617,6 +621,17 @@ header{
         }
 
     }
+
+    .help{
+        .message{
+            form{
+                button{
+                    padding-left: 1rem;
+                    padding-right: 1rem;
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width:768px) and(min-width:637px) {
@@ -875,5 +890,9 @@ header{
     }
 
 
+
+}
+
+@media screen and (max-width:420px){
 
 }

@@ -5,6 +5,10 @@
           box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .container-header {
   text-align: center;
   font-weight: 600;
@@ -781,6 +785,10 @@ header .hamburger {
   }
   .product-section .products-container .product img {
     left: 25%;
+  }
+  .help .message form button {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 
