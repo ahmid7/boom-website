@@ -894,5 +894,40 @@ header{
 }
 
 @media screen and (max-width:420px){
+    .headset-image-container{
+        width: 200px;
+        top:-270px
+    }
 
+    .specs{
+        padding-bottom: 2rem;
+        .product-specs-container{
+            .product-spec{
+                h5{
+                    font-size:0.8rem;
+                }
+                p{
+                    font-size:0.5rem;
+                }
+                div:nth-child(3n +1){
+                    margin-left: 1.5rem;
+                }
+            }
+        }
+    }
+
+    .case{
+        .case-container{
+            .case-img-container{
+                border:2px solid red;
+                flex-basis: 25%;
+            }
+            .case-img{
+                width:150px;
+            }
+            .case-details{
+                flex-basis: 70%;
+            }
+        }
+    }
 }

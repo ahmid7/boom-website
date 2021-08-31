@@ -1005,4 +1005,35 @@ header .hamburger {
             align-items: center;
   }
 }
+
+@media screen and (max-width: 420px) {
+  .headset-image-container {
+    width: 200px;
+    top: -270px;
+  }
+  .specs {
+    padding-bottom: 2rem;
+  }
+  .specs .product-specs-container .product-spec h5 {
+    font-size: 0.8rem;
+  }
+  .specs .product-specs-container .product-spec p {
+    font-size: 0.5rem;
+  }
+  .specs .product-specs-container .product-spec div:nth-child(3n +1) {
+    margin-left: 1.5rem;
+  }
+  .case .case-container .case-img-container {
+    border: 2px solid red;
+    -ms-flex-preferred-size: 25%;
+        flex-basis: 25%;
+  }
+  .case .case-container .case-img {
+    width: 150px;
+  }
+  .case .case-container .case-details {
+    -ms-flex-preferred-size: 70%;
+        flex-basis: 70%;
+  }
+}
 /*# sourceMappingURL=style.css.map */
