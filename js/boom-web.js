@@ -21,7 +21,7 @@ window.addEventListener('scroll', function(){
         })
         if(scrolled < 888){
             scrollHeader(headerLinks,0);
-        }else if(scrolled < 1666){
+        }else if(scrolled < 1650){
             scrollHeader(headerLinks,1);
         }else if(scrolled < 2320){
             scrollHeader(headerLinks,2);
