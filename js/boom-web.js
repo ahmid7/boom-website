@@ -45,12 +45,4 @@ hamburgerClose.addEventListener('click',function(){
     gsap.fromTo('.nav-list',{y:0},{duration:0.6,y:-500});
 });
 
-for(let i = 0;i < headerLinks.length;i++){
-    headerLinks[i].addEventListener('click',function(){
-        headerLinks.forEach(function(header){
-            header.classList.remove('LinkActive');
-        })
-        headerLinks[i].classList.add('LinkActive');
-    })   
-}
 
