@@ -4,12 +4,6 @@ const headerLinks = document.querySelectorAll('li a');
 const hamburger = document.querySelector('.hamburger');
 const hamburgerClose = document.querySelector('.hamburger-close');
 const navList = document.querySelector('.nav-list');
-function scrollHeader(headerlink,number){
-    for(let i = 0;i < headerlink.length;i++){
-        headerlink[i].classList.remove('nav-active');
-    }
-    headerlink[number].classList.add('nav-active');
-}
 
 
 window.addEventListener('scroll', function(){
@@ -22,7 +16,6 @@ window.addEventListener('scroll', function(){
         headerContainer.style.boxShadow = 'none';
         headerContainer.style.background = 'none';
     }
-    // <888,<1610,<2320,<3390
 })
 
 hamburger.addEventListener('click', function(){
@@ -33,13 +26,4 @@ hamburger.addEventListener('click', function(){
 hamburgerClose.addEventListener('click',function(){
     gsap.fromTo('.nav-list',{y:0},{duration:0.6,y:-500});
 });
-
-for(let i = 0; i < headerLinks.length;i++){
-    headerLinks[i].addEventListener('click', function(){
-        for(let i = 0;i < headerLinks.length;i++){
-            headerLinks[i].classList.remove('nav-active');
-        }
-        headerLinks[i].classList.add('nav-active');
-    })
-}
 
